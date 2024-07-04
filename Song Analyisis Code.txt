@@ -1,0 +1,36 @@
+   Source = Excel.Workbook(File.Contents("C:\Users\Emmanuel\Desktop\clean data.xlsx"), null, true),
+    Sheet1_Table = Source{[Item="Sheet1",Kind="Table"]}[Data],
+    #"Changed Type" = Table.TransformColumnTypes(Sheet1_Table,{{"Column1", Int64.Type}, {"video_id", type text}, {"channelTitle", type text}, {"title", type text}, {"description", type text}, {"tags", type text}, {"publishedAt", type date}, {"viewCount", Int64.Type}, {"likeCount", Int64.Type}, {"favoriteCount", Int64.Type}, {"commentCount", Int64.Type}, {"duration", type datetime}, {"definition", type text}, {"caption", type logical}}),
+    #"Renamed Columns" = Table.RenameColumns(#"Changed Type",{{"publishedAt", "Year"}}),
+    #"Extracted Date" = Table.TransformColumns(#"Renamed Columns",{{"duration", DateTime.Date, type date}}),
+    #"Changed Type1" = Table.TransformColumnTypes(#"Extracted Date",{{"duration", type date}}),
+    #"Changed Type2" = Table.TransformColumnTypes(#"Changed Type1",{{"duration", Int64.Type}}
+    Sum of"likecount" was represented by a "bar chart" with "blue colour"
+    #Sum of "commentcount" was repersented by a "bar chart" with a "blue clour"
+    #Sum of "viewcunt was reperented by a "bar chart" with a "blue clour"
+in
+    #"Changed Type2"
+			'illustration of  the visualization used'
+
+  1.  The likecount by view count was represented with a line chart using;
+	'likecount' and 'viewcount' field,
+	'likecount on the Y-axis and 'viewcount on the X-axis
+
+  2.  Sum of 'commentcount by viewcount wasrepersented by a line chart using;
+	 'commentcount and 'viewcount field,
+          'viewcount' on the X-axis and sum of commnetcount on the Y-axis
+ 
+  3.   Sum of 'viewcount by tags' was represented with a scatter chart using;
+	 'viewcount', and 'tags' field,
+	  'sum ofviewcount on the X-axis and 'tags' on value.
+
+ 4. 	Sum of viewcount, sum of commentcount and sum of likecount was represented with a table using;
+	'sum of viewcount, sum of likecount and sum of commentcount field,
+	'sum of viewcount, 'sum of likecount' and 'sum of commentcount' all used a column 
+
+ 5. 	The 'year, was represented by a slicer using;
+	the field column was used.
+
+6. 	The 'channeltitle' was represented  using 'table chart',
+
+
