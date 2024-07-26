@@ -1,1 +1,14 @@
+About this project
+Project Goal: The goal of this project is to analyze a dataset of YouTube song videos to gain valuable insights into their popularity, user engagement, and factors that influence performance.
 
+Business Need: Content creators and stakeholders in the music industry need a better understanding of how their YouTube song videos are performing and what factors drive viewership, likes, and comments. This information can help them optimize their content creation and marketing strategies to increase the reach and engagement of their YouTube channels.
+
+Problem Solved: By leveraging Power BI's data analysis and visualization capabilities, this project addresses the business need by:
+
+Cleaning and preparing the YouTube song video dataset to ensure data quality and accuracy.
+Conducting exploratory data analysis to uncover patterns and trends in view counts, likes, and comments.
+Analyzing the content and channel characteristics to identify popular tags, top-performing channels, and their correlation with engagement metrics.
+Exploring temporal trends to pinpoint peak publishing times and their impact on video performance.
+Investigating the relationships between likes, comments, and views to understand the factors that influence user engagement.
+Presenting the insights in an interactive Power BI dashboard and a comprehensive report, enabling content creators and stakeholders to make data-driven decisions to enhance the performance of their YouTube song videos.
+This project provides a data-driven approach to understanding the YouTube song video landscape, allowing the music industry to make more informed decisions and optimize their content strategy for better results.
